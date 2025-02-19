@@ -1,6 +1,7 @@
 ﻿body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color:darkgray;
 }
 nav {
     display: flex;
@@ -120,6 +121,114 @@ nav {
 .slide:nth-child(3) {
     animation-delay: 6s;
 }
+
+/*Contacts*/
+.location-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.location-map {
+    width: 100%;
+    max-width: 100%;
+    height: 750px;
+    border: 0;
+    filter: brightness(80%);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#h-for-contacts {
+    color: goldenrod;
+}
+
+.contact-page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact-form-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+.contact-info-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+    .contact-info-container hr{
+        height:0,5%;
+    }
+
+    .contact-header {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-input, .contact-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-textarea {
+    resize: none;
+}
+
+.contact-info-container a {
+    color: goldenrod;
+    text-decoration: none
+}
+
+    .contact-info-container a:hover {
+        text-decoration: underline;
+    }
+
+.contact-button-send {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+
+    .contact-button-send:hover {
+        background-color: darkgoldenrod;
+    }
+/*Footer*/
 .footer {
     background-color: #222;
     color: #fff;
