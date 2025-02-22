@@ -150,7 +150,7 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #h-for-contacts {
-    color: goldenrod;
+    color: #2b2b2b;
 }
 
 .contact-page-container {
@@ -160,15 +160,8 @@ nav {
     padding: 20px;
     margin-top:8%;
 }
-.contact-form-container {
-    background-color: lightgray;
-    min-width: 300px;
-    max-width: 700px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    margin:0 auto;
-}
+
+
 
 .contact-info-container {
     flex: 1;
@@ -208,12 +201,13 @@ nav {
 }
 
 .contact-info-container a {
-    color: goldenrod;
+    color: #2b2b2b;
     text-decoration: none
 }
 
     .contact-info-container a:hover {
         text-decoration: underline;
+        color:darkgoldenrod;
     }
 
 .contact-button-send {
@@ -235,6 +229,7 @@ nav {
 .services-container {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top:2%;
     padding: 20px;
 }
 
@@ -246,28 +241,41 @@ nav {
 
 .services-grid, .services-grid2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-
+    .service-item img {
+        max-width: 100px;
+    }
 .service-item {
+    position: relative;
     background-color: lightgray;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
 }
-
     .service-item:hover {
         transform: translateY(-5px);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
-    .service-item img {
-        max-width: 100px;
-        margin-bottom: 15px;
-    }
+.service-description {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.service-item:hover .service-description {
+    opacity: 1;
+    max-height: 100px;
+}
 /*Footer*/
 .footer {
     background-color: #222;
