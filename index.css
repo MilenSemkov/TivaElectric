@@ -276,6 +276,46 @@ nav {
     opacity: 1;
     max-height: 100px;
 }
+/*Home Info*/
+.About-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 2% 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    background-color:lightgrey;
+}
+
+.About-text {
+    max-width: 70%;
+}
+
+.About-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.About-list {
+    font-size: 18px;
+    line-height: 1.8;
+    list-style-type: none;
+}
+
+    .About-list li {
+        margin-bottom: 10px;
+    }
+
+.About-image {
+    max-width: 30%;
+}
+
+    .About-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
 /*Footer*/
 .footer {
     background-color: #222;
