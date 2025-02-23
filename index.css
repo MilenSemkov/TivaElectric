@@ -249,7 +249,13 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-
+@media screen and (max-wight:768) {
+    .services-grid, .services-grid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
 .service-item img {
     max-width: 100px;
     background-color: lightgray;
