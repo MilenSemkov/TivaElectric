@@ -1,8 +1,9 @@
 ﻿body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color:darkgray;
+    background-color: darkgray;
 }
+
 nav {
     display: flex;
     justify-content: center;
@@ -14,6 +15,7 @@ nav {
     width: 100%;
     z-index: 1000;
 }
+
 .nav-left, .nav-right {
     display: flex;
     gap: 20px;
@@ -52,6 +54,7 @@ nav {
     .logo img {
         height: 70px;
     }
+
 .slider {
     width: 100%;
     height: 100vh;
@@ -73,6 +76,7 @@ nav {
         object-fit: cover;
         filter: brightness(70%);
     }
+
 .text {
     position: absolute;
     top: 50%;
@@ -83,6 +87,7 @@ nav {
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+
     .text p {
         position: relative;
         left: 50%;
@@ -92,6 +97,7 @@ nav {
         font-size: 30px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
+
     .text h5 {
         position: relative;
         left: 50%;
@@ -100,6 +106,7 @@ nav {
         color: goldenrod;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
+
 @keyframes slideAnimation {
     0%, 100% {
         opacity: 0;
@@ -131,23 +138,11 @@ nav {
 }
 
 /*Contacts*/
-.location-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 2%;
-}
-
-.location-map {
-    width: 100%;
-    max-width: 100%;
-    height: 400px;
-    border: 0;
-    filter: brightness(80%);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#bodyForContacts {
+    background-image: url(IMG/HomePage-background1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #h-for-contacts {
     color: #2b2b2b;
@@ -158,7 +153,8 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    margin-top:2%;
+    margin-top: 8%;
+
 }
 
 
@@ -167,20 +163,22 @@ nav {
     flex: 1;
     min-width: 300px;
     max-width: 500px;
-    background-color: lightgray;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Променете цвета и прозрачността */
+    transition: background-color 0.3s ease;
 }
-    .contact-info-container hr{
-        height:0,5%;
+
+    .contact-info-container hr {
+        height: 0,5%;
     }
 
-    .contact-header {
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
+.contact-header {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
 .contact-label {
     font-weight: bold;
@@ -188,7 +186,7 @@ nav {
 }
 
 .contact-input, .contact-textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -207,7 +205,7 @@ nav {
 
     .contact-info-container a:hover {
         text-decoration: underline;
-        color:darkgoldenrod;
+        color: darkgoldenrod;
     }
 
 .contact-button-send {
@@ -228,10 +226,11 @@ nav {
 /*Services*/
 #bodyForServises {
     background-image: url(IMG/HomePage-background1.jpg);
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
+
 .services-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -244,33 +243,39 @@ nav {
     font-size: 2em;
     margin-bottom: 20px;
 }
-    .services-grid, .services-grid2 {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-    .service-item img {
-        max-width: 100px;
-        background-color:lightgray;
-        border-radius:50px;
-    }
+
+.services-grid, .services-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.service-item img {
+    max-width: 100px;
+    background-color: lightgray;
+    border-radius: 50px;
+}
+
 .service-item {
     position: relative;
     text-align: center;
     color: gray;
+    font-weight: bold;
     border-radius: 5px;
     text-shadow: 0px 0px 1px black;
-    /*    padding: 20px;*/
+    padding: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0); /* Променете цвета и прозрачността */
     transition: background-color 0.3s ease;
 }
+
     .service-item:hover {
         transform: translateY(-5px);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         background-color: rgba(255, 255, 255, 0.9);
     }
+
 .service-description {
     opacity: 0;
     max-height: 0;
@@ -284,7 +289,7 @@ nav {
 .service-item:hover .service-description {
     opacity: 1;
     max-height: 100px;
-    color:black;
+    color: black;
 }
 /*Home Info*/
 .About-container {
@@ -295,7 +300,7 @@ nav {
     margin: 2% 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    background-color:lightgrey;
+    background-color: lightgrey;
 }
 
 .About-text {
@@ -344,7 +349,7 @@ nav {
 }
 
     .footer-column h3 {
-        border-bottom: 2px goldenrod solid ;
+        border-bottom: 2px goldenrod solid;
         display: inline-block;
         margin-bottom: 10px;
         padding-bottom: 5px;
@@ -400,7 +405,8 @@ nav {
 .end {
     background-color: #1e1e1e;
 }
-.end p{
-    color:grey;
-   text-align:center;
-}
+
+    .end p {
+        color: grey;
+        text-align: center;
+    }
