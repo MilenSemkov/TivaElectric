@@ -226,42 +226,51 @@ nav {
         background-color: darkgoldenrod;
     }
 /*Services*/
+#bodyForServises {
+    background-image: url(IMG/HomePage-background1.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
 .services-container {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top:2%;
+    margin-top: 8%;
     padding: 20px;
 }
+
 
 .services-title {
     font-size: 2em;
-    color: #2d3e50;
     margin-bottom: 20px;
 }
-
-.services-grid, .services-grid2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
+    .services-grid, .services-grid2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
     .service-item img {
         max-width: 100px;
+        background-color:lightgray;
+        border-radius:50px;
     }
 .service-item {
     position: relative;
-    background-color: lightgray;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
-    padding: 20px;
+    color: gray;
+    border-radius: 5px;
+    text-shadow: 0px 0px 1px black;
+    /*    padding: 20px;*/
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0); /* Променете цвета и прозрачността */
+    transition: background-color 0.3s ease;
 }
     .service-item:hover {
         transform: translateY(-5px);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.9);
     }
-
 .service-description {
     opacity: 0;
     max-height: 0;
@@ -275,6 +284,7 @@ nav {
 .service-item:hover .service-description {
     opacity: 1;
     max-height: 100px;
+    color:black;
 }
 /*Home Info*/
 .About-container {
