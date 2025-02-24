@@ -251,22 +251,18 @@ nav {
 }
 @media (max-width: 1024px) {
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* По 2 на ред */
     }
 }
+
 @media (max-width: 600px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 400px) {
     .services-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-}
 .service-item img {
-    max-width: 100px;
+    max-width: 80px;
+    height: auto;
     background-color: lightgray;
     border-radius: 50px;
 }
