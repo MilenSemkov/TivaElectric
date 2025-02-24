@@ -244,16 +244,20 @@ nav {
     margin-bottom: 20px;
 }
 
-.services-grid, .services-grid2 {
+.services-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-@media screen and (max-wight:768) {
-    .services-grid, .services-grid2 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* По 2 на ред */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr); /* По 1 на ред за много малки екрани */
     }
 }
 .service-item img {
