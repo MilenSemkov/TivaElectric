@@ -321,7 +321,7 @@ justify-content:space-around;
     .footer {
         padding: 0;
         margin-top: 10%;
-        
+        width:100%;
     }
 
     .social-media a {
