@@ -82,30 +82,11 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: goldenrod;
     font-size: 48px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
-    .text p {
-        position: relative;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%);
-        color: goldenrod;
-        font-size: 30px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
-
-    .text h5 {
-        position: relative;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%);
-        color: goldenrod;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
 
 @keyframes slideAnimation {
     0%, 100% {
@@ -225,7 +206,7 @@ nav {
     }
 /*Services*/
 #bodyForServises {
-    background-image: url(IMG/HomePage-background1.jpg);
+    background-image: url(IMG/HomePage-background3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -256,7 +237,7 @@ nav {
 
 @media (max-width: 1024px) {
     .services-grid {
-        grid-template-columns: repeat(2, 1fr); /* По 2 на ред */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -364,8 +345,8 @@ nav {
 
     .images-item {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Малките снимки ще са по 2 на ред */
-        gap: 10px; /* Добавено разстояние между краищата */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
         justify-content: center;
     }
 
@@ -389,14 +370,14 @@ nav {
 .service-item {
     position: relative;
     text-align: center;
-    color: gray;
+    color: darkgoldenrod;
     font-weight: bold;
     border-radius: 5px;
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 0px 0px 1px goldenrod;
     padding: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0); /* Променете цвета и прозрачността */
+    background-color: rgba(255, 255, 255, 0);
     transition: background-color 0.3s ease;
 }
 
@@ -433,10 +414,6 @@ nav {
     background-color: lightgrey;
 }
 
-.About-text {
-    max-width: 70%;
-}
-
 .About-title {
     font-size: 30px;
     font-weight: bold;
@@ -453,14 +430,6 @@ nav {
         margin-bottom: 10px;
     }
 
-.About-image {
-    max-width: 30%;
-}
-
-    .About-image img {
-        width: 100%;
-        border-radius: 10px;
-    }
 /*Each Service*/
 #bodyForeachService {
     background-image: url(IMG/HomePage-background1.jpg);
@@ -560,6 +529,121 @@ nav {
     .add-to-cart:hover {
         background-color: darkgoldenrod;
     }
+/*Galery*/
+#bodyForGalery {
+    background-image: url(IMG/HomePage-background3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    margin: 6% auto;
+}
+
+.video-frame {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: black;
+}
+
+    .video-frame video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.video-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev-video {
+    left: 10px;
+}
+
+.next-video {
+    right: 10px;
+}
+
+.galery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 картички на ред */
+    gap: 30px; /* Намалено разстояние между тях */
+    justify-content: center;
+    padding: 10px;
+    width: 90%;
+    margin: 2% auto;
+}
+
+.galery-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.gallery-title {
+    font-size: 52px;
+    font-weight: bold;
+    margin: 30px 0;
+    padding:5%;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkgoldenrod;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.galery-card img {
+    width: 320px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.galery-card h3 {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.galery-card p {
+    font-size: 0.9em;
+    padding: 0 10px 10px;
+}
+
+.galery-card button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
 /*Footer*/
 .footer {
     background-color: #222;

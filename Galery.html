@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tiva Electric</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css" />
+</head>
+<body id="bodyForGalery">
+    >
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li><a href="index.html">НАЧАЛО</a></li>
+                <li><a href="Services.html">УСЛУГИ</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="IMG/tiva-electric-logo.png" alt="Tiva ELectric"></a>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="Galery.html">ГАЛЕРИЯ</a></li>
+                <li><a href="Contacts.html">КОНТАКТИ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="video-container">
+        <button class="video-btn prev-video" onclick="changeVideo(-1)">⮜</button>
+        <div class="video-frame">
+            <video id="galleryVideo" controls>
+                <source src="IMG/video1.mp4" type="video/mp4">
+                Вашият браузър не поддържа видео.
+            </video>
+        </div>
+        <button class="video-btn next-video" onclick="changeVideo(1)">⮞</button>
+    </div>
+
+    <div class="gallery-title">ГАЛЕРИЯ</div>
+
+    <div class="galery-container">
+        <div class="galery-card">
+            <button class="prev" onclick="prevImage(0)">&lt;</button>
+            <img src="IMG/Service1-1.jpg" alt="Снимка 1">
+            <button class="next" onclick="nextImage(0)">&gt;</button>
+            <h3>Eл. инсталация положена в тръби</h3>
+        </div>
+        <div class="galery-card">
+            <button class="prev" onclick="prevImage(1)">&lt;</button>
+            <img src="IMG/Service2-1.jpg" alt="Снимка 2">
+            <button class="next" onclick="nextImage(1)">&gt;</button>
+            <h3>Пренарреждане на рак шкаф, преди и след</h3>
+        </div>
+        <div class="galery-card">
+            <button class="prev" onclick="prevImage(2)">&lt;</button>
+            <img src="IMG/Service3-1.jpg" alt="Снимка 3">
+            <button class="next" onclick="nextImage(2)">&gt;</button>
+            <h3>Индустриално окабеляване и монтаж на кабелни скари</h3>
+
+        </div>
+        <div class="galery-card">
+            <button class="prev" onclick="prevImage(3)">&lt;</button>
+            <img src="IMG/Service4-2.jpg" alt="Снимка 4">
+            <button class="next" onclick="nextImage(3)">&gt;</button>
+            <h3>Кабелни скари</h3>
+
+        </div>
+        <div class="galery-card">
+            <button class="prev" onclick="prevImage(4)">&lt;</button>
+            <img src="IMG/Service5-1.jpg" alt="Снимка 4">
+            <button class="next" onclick="nextImage(4)">&gt;</button>
+            <h3>Профилактика и подмяна на ел. табло, преди и след </h3>
+
+        </div>
+        <div class="galery-card">
+            <button class="prev" onclick="prevImage(5)">&lt;</button>
+            <img src="IMG/Service6-1.jpg" alt="Снимка 4">
+            <button class="next" onclick="nextImage(5)">&gt;</button>
+            <h3>Мълниезащита </h3>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Информация</h3>
+            <ul>
+                <li><a href="#about.html">За нас</a></li>
+                <li><a href="Contacts.html">Контакти</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Страници</h3>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="Services.html">Услуги</a></li>
+                <li><a href="Galery.html">Галерия</a></li>
+                <li><a href="Contacts.html">Контакти</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column_footer-contact">
+            <h3>Свържете се с нас</h3>
+            <p>Телефон: <a href="tel:+359894716677">+359 894 716 677</a></p>
+            <p>Телефон: <a href="tel:+359890594911">+359 890 594 911</a></p>
+            <p>📧 Email: <a href="mailto:info@tivaelectric.bg">info@tivaelectric.bg</a></p>
+        </div>
+
+    </footer>
+    <div class="end">
+        <br />
+        <p>©"ТИВА ЕЛЕКТРИК" ООД | Designed by Milen Semkov</p>
+        <br />
+    </div>
+
+    <script>
+        const images = [
+            ["IMG/Service1-1.jpg", "IMG/Service1-2.jpg", "IMG/Service1-3.jpg", "IMG/Service1-4.jpg", "IMG/Service1-5.jpg", "IMG/Service1-6.jpg", "IMG/Service1-7.jpg", "IMG/Service1-8.jpg"],
+            ["IMG/Service2-1.jpg", "IMG/Service2-2.jpg", "IMG/Service2-3.jpg", "IMG/Service2-4.jpg", "IMG/Service2-9.jpg", "IMG/Service2-10.jpg", "IMG/Service2-11.jpg", "IMG/Service2-12jpg"],
+            ["IMG/Service3-1.jpg", "IMG/Service3-2.jpg", "IMG/Service3-3.jpg", "IMG/Service3-4.jpg", "IMG/Service3-5.jpg", "IMG/Service3-6.jpg"],
+            ["IMG/Service4-2.jpg", "IMG/Service4-1.jpg", "IMG/Service4-3.jpg", "IMG/Service4-4.jpg"],
+            ["IMG/Service5-1.jpg", "IMG/Service5-2.jpg", "IMG/Service5-3.jpg", "IMG/Service5-4.jpg"],
+            ["IMG/Service6-1.jpg", "IMG/Service6-2.jpg", "IMG/Service6-3.jpg", "IMG/Service6-4.jpg", "IMG/Service6-5.jpg", "IMG/Service6-6.jpg"]
+        ];
+
+        let indices = [0, 0, 0, 0, 0, 0];
+
+        function nextImage(cardIndex) {
+            indices[cardIndex] = (indices[cardIndex] + 1) % images[cardIndex].length;
+            document.querySelectorAll(".galery-card img")[cardIndex].src = images[cardIndex][indices[cardIndex]];
+        }
+
+        function prevImage(cardIndex) {
+            indices[cardIndex] = (indices[cardIndex] - 1 + images[cardIndex].length) % images[cardIndex].length;
+            document.querySelectorAll(".galery-card img")[cardIndex].src = images[cardIndex][indices[cardIndex]];
+        }
+        const videos = ["IMG/video1.mp4", "IMG/video2.mp4", "IMG/video3.mp4"];
+        let currentVideo = 0;
+
+        function changeVideo(direction) {
+            currentVideo += direction;
+            if (currentVideo < 0) currentVideo = videos.length - 1;
+            if (currentVideo >= videos.length) currentVideo = 0;
+
+            document.getElementById("galleryVideo").src = videos[currentVideo];
+        }
+    </script>
+</body>
+</html>
